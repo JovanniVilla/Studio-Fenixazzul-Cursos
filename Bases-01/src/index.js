@@ -1,14 +1,11 @@
-// Creacion de objetos
- 
-const heroes = [{
-    id: 1,
-    name: 'Batman'
-},{
-    id:2,
-    name:'Superman'
+//en las importaciones y exportaciones se va ejecutar el archivo tener cuidado
 
-}]
-//const existe = heroes.some((heroe)=> heroe.id === 1);
-const heroe = heroes.find((heroe)=> heroe.id === 1);
+import {owner } from "./bases/heroes";
 
-console.log(heroe.name)
+//console.log (owner)
+
+//Exportacion por defecto 
+
+import superHeroes from "./bases/heroes";
+
+console.log(superHeroes)
