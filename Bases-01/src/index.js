@@ -1,11 +1,14 @@
-//en las importaciones y exportaciones se va ejecutar el archivo tener cuidado
+//las promesas son tareas asincronas
 
-import {owner } from "./bases/heroes";
+console.log('Inicio')
 
-//console.log (owner)
+// la Promesa 
+new Promise( (resolve, reject) => {
 
-//Exportacion por defecto 
+    console.log('cuerpo de la promesa')
+    // la resolucion de la promesa se ejecuta la final de la ejecucion 
+    resolve('Promesa resuelta')
+})
+.then( msg => console.log( msg ) )
 
-import superHeroes from "./bases/heroes";
-
-console.log(superHeroes)
+console.log('Fin')
