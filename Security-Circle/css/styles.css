@@ -1,0 +1,48 @@
+/* //Declaracion de variables para el documento */
+:root{
+    --blanco:#fff;
+    --negro:#000;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+    --gris:#757575;
+    --tipoLetras:'Krub', sans-serif;
+
+}
+/* Hack para utilizar los rems */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: var(--tipoLetras);
+    font-weight: 400;
+    
+}
+/* Termina Hack */
+/* los 1 rem ahora equivale a 10px */
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem; 
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     */
+       
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: 160rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);    
+}
+
+.navegacionPrincipal a {
+    background-color: var(--primario);    
+
+}

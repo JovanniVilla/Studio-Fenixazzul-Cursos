@@ -5,8 +5,20 @@
         <meta name="viewport" content="whidth=device-width, initial-scale=1.0">
         <title>FreeLance Web</title>
 
-        <link href="/css/normalize.css">
-        <link href="/css/styles.css">
+<!-- //normaliza los formatos -->
+        <link href="/css/normalize.css" rel="stylesheet">
+
+<!-- //Cargar Fuentes de Google -->
+        <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+<!-- //Precarga -->
+        <link rel="preload" href="/css/styles.css" as="style">
+
+<!-- //Cargar Estilos -->
+        <link href="/css/styles.css" rel="stylesheet">
+
+
+
 
 
     </head>
@@ -16,9 +28,9 @@
        
         <header>
             <!--solo se debe utilizar un "h1"-->
-            <h1>Circulo de Seguridad </h1>
+            <h1 class="titulo">Circulo de Seguridad <span>GDL</span> </h1>
 
-            <h2>Jovanni Garcia Freelancer</h2>
+            <h2 class="titulo">Jovanni Garcia <span>Freelancer</span></h2>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-3d-cube-sphere" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M6 17.6l-2 -1.1v-2.5" />
@@ -38,24 +50,24 @@
 
             <a href="#">Contactar</a>
         </header>
-
-        <nav>
-            <a href="/index.html">Inicio</a>
-            <a href="/nosotros.html">Nosotros</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contactos</a>
-        </nav>
+        <div class="nav-bg">
+            <nav class="navegacionPrincipal contenedor">
+                <a href="/index.html">Inicio</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="#">Clientes</a>
+                <a href="#">Contactos</a>
+            </nav>
+        </div>
        
         <main>
             <h2>Mis Servicios</h2>
 
             <section>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-traffic-cone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="20" x2="20" y2="20" />
-                    <line x1="9.4" y1="10" x2="14.6" y2="10" />
-                    <line x1="7.8" y1="15" x2="16.2" y2="15" />
-                    <path d="M6 20l5 -15h2l5 15" />
+                    <line x1="12" y1="12" x2="12" y2="12.01" />
+                    <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10" transform="rotate(45 12 12)" />
+                    <path d="M12 2a4 10 0 0 0 -4 10a4 10 0 0 0 4 10a4 10 0 0 0 4 -10a4 10 0 0 0 -4 -10" transform="rotate(-45 12 12)" />
                   </svg>
                 <h3>Diseño Web</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum temporibus rerum dolor 
@@ -129,7 +141,7 @@
                     <div>
                         <input type="submit" value="Enviar">
                     </div>
-                    
+
                 </fieldset>
 
             </form>
