@@ -4,7 +4,7 @@
     --negro:#000;
     --primario:#ffc107;
     --secundario:#0097a7;
-    --gris:#75757593;
+    --gris:#757575c0;
     --tipoLetras:'Krub', sans-serif;
 
 }
@@ -21,9 +21,17 @@ body{
 /* Termina Hack */
 /* los 1 rem ahora equivale a 10px */
 
+h1{
+    font-size: 3.8rem;
+}
+h2{font-size: 2.8rem;}
+h3{
+    font-size: 1.8rem;
+}
 .titulo{
     text-align: center;
-    font-size: 3.8rem; 
+    font-size: 3.8rem;
+    color: var(--blanco);
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      */
 }
@@ -80,9 +88,9 @@ body{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35rem;
-    padding: 2rem;
+    height: 40rem;
     position: relative;
+    
 }
 
 .contenido-hero{
@@ -90,5 +98,32 @@ body{
     background-color:var(--gris);
     width: 100%;
     height: 100%;
-    padding: 0rem;
+
+
+   /*  //alineara Horizontal y vertical   */ 
+   display: flex;
+
+
+   flex-direction: column;
+   /* esta alianea en columnas */
+   align-items: center;
+}
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* se crea laimgen general de un Boton */
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: .5rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
 }
