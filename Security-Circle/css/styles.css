@@ -5,9 +5,11 @@
     --primario:#ffc107;
     --secundario:#0097a7;
     --gris:#757575c0;
+    --grisClaro:#b0becc;
     --tipoLetras:'Krub', sans-serif;
 
 }
+/* Modificacion General */
 /* Hack para utilizar los rems */
 html{
     font-size: 62.5%;
@@ -16,6 +18,7 @@ body{
     font-size: 16px;
     font-family: var(--tipoLetras);
     font-weight: 400;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%,  var(--blanco) 100%); 
     
 }
 /* Termina Hack */
@@ -24,6 +27,7 @@ body{
 h1{
     font-size: 3.8rem;
 }
+
 h2{font-size: 2.8rem;}
 h3{
     font-size: 1.8rem;
@@ -41,7 +45,7 @@ h3{
 }
 
 .contenedor{
-    max-width: 160rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -119,11 +123,25 @@ h3{
     align-items: center;
     
 }
-/* se crea laimgen general de un Boton */
+
+
+/* se crea la imagen general de un Boton */
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
     padding: .5rem 3rem;
     margin-top: 3rem;
     font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (min-width: 480px) {
+    boton-width: auto;
+    
 }
