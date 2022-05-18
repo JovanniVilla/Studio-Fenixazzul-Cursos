@@ -24,6 +24,7 @@ body{
 /* Termina Hack */
 /* los 1 rem ahora equivale a 10px */
 
+/* estos son los titulos  */
 h1{
     font-size: 3.8rem;
 }
@@ -129,19 +130,22 @@ h3{
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
-    padding: .5rem 3rem;
-    margin-top: 3rem;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: .5rem;
-    width: 100%;
+    width: 90%; 
     text-align: center;
 }
 
 
 @media (min-width: 480px) {
-    boton-width: auto;
+    .boton-{
+        width: auto;
+    }
     
 }
+
