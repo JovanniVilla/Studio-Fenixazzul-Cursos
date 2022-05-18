@@ -5,15 +5,17 @@
     --primario:#ffc107;
     --secundario:#0097a7;
     --gris:#757575c0;
-    --grisClaro:#b0becc;
+    --grisClaro:#c8d0d8;
     --tipoLetras:'Krub', sans-serif;
 
 }
+/* configuracion Global */
 /* Modificacion General */
 /* Hack para utilizar los rems */
 html{
     font-size: 62.5%;
-    }
+}
+
 body{
     font-size: 16px;
     font-family: var(--tipoLetras);
@@ -21,6 +23,17 @@ body{
     background-image: linear-gradient(to top, var(--grisClaro) 0%,  var(--blanco) 100%); 
     
 }
+
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 2px rgba(84,100,176,0.39);
+    -moz-box-shadow: 0px 5px 15px 2px rgba(84,100,176,0.39);
+    box-shadow: 0px 5px 15px 2px rgba(84,100,176,0.39);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: .75rem;
+}
+
 /* Termina Hack */
 /* los 1 rem ahora equivale a 10px */
 
@@ -32,6 +45,7 @@ h1{
 h2{font-size: 2.8rem;}
 h3{
     font-size: 1.8rem;
+    text-align: center;
 }
 .titulo{
     text-align: center;
@@ -50,7 +64,10 @@ h3{
     margin: 0 auto;
 }
 
-
+/* padding bottom */
+.pb2{
+    padding-bottom: 2rem;
+}
 /* Barra de Navegacion  */
 .nav-bg{
     background-color: var(--secundario);    
@@ -95,6 +112,7 @@ h3{
     background-size: cover;
     height: 40rem;
     position: relative;
+    padding-bottom: 2rem; 
     
 }
 
@@ -103,7 +121,6 @@ h3{
     background-color:var(--gris);
     width: 100%;
     height: 100%;
-
 
    /*  //alineara Horizontal y vertical   */ 
    display: flex;
@@ -148,4 +165,77 @@ h3{
     }
     
 }
+/* centrar textos de forma indempendiente  */
+.text-center{
+    text-align: center;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* esta es igual que 1fr 1fr 1fr */
+    column-gap: 1rem;
 
+
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.servicio h3{
+    color: var(--secundario);
+    
+}
+.servicio p{
+    line-height: 2;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contacto */
+.formulario{
+    background-color: var(--grisClaro);
+    border-radius: 1rem;
+    width: min(60rem, 100%); /* toma la pocicion mas pequeña  y toma el porcentage */
+    max-width: 80rem; 
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+  color: var(--secundario);  
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem
+}
+.contenedorCampos{
+
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+
+}
