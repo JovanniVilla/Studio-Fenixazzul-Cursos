@@ -1,6 +1,7 @@
 :root{
     /* Colores */
-    --primario:#9c27b0;
+    /* --primario:#9c27b0; */
+    --primario:#a3a2a3;
     --primarioObscuro:#89119d;
     --secundario: #ffce00;
     --secundarioObscuro: rgb(233,287,2);
@@ -179,4 +180,35 @@ h3{
         background-image: url(/img/grafico2.jpg);
         background-size: cover;
     }
+}
+
+
+/* ***NOSOTROS*** */
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    
+}
+
+.nosotros__imagen{
+    grid-row: 1/2;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .nosotros__imagen{
+        grid-column: 2/3;
+    }
+}
+
+/* *** Iconos***  */
+
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2, fr);
 }
