@@ -39,3 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px){
+    .dos-columnas{
+        display: flex;
+        flex: 50% 50%;
+        gap: 2rem;
+    }
+}
