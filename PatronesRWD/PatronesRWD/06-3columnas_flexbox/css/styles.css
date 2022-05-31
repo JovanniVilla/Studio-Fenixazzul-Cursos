@@ -48,3 +48,15 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.tres-columnas{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.sidebar{
+    flex-basis: calc(20% -1rem);
+}
+.contenido-principal{}
+.aside-1{}
+.aside-2{}
