@@ -49,3 +49,21 @@ p {
 
 
 /** CODIGO AQUI **/
+
+.tres-columnas{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-auto-flow: column; /* genera las columnas sin Rows */ 
+    column-gap: 2rem;
+}
+.contenido-principal{
+    grid-column: 2 / 3;
+}
+
+.asidebar{}
+.aside1{
+    grid-column: 1 / 2;
+}
+.aside2{
+    grid-column: 3 / 4;
+}
