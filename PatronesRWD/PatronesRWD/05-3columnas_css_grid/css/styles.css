@@ -49,6 +49,7 @@ p {
 
 
 /** CODIGO AQUI **/
+<<<<<<< HEAD
 @media (min-width:768px) {
     .contenedor-grid{
         display: grid;
@@ -68,3 +69,23 @@ p {
         grid-column: 2 / 3;
     }
 }
+=======
+
+.tres-columnas{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-auto-flow: column; /* genera las columnas sin Rows */ 
+    column-gap: 2rem;
+}
+.contenido-principal{
+    grid-column: 2 / 3;
+}
+
+.asidebar{}
+.aside1{
+    grid-column: 1 / 2;
+}
+.aside2{
+    grid-column: 3 / 4;
+}
+>>>>>>> 358bdaed9f75348f78fbc432392f328c843df3e4
