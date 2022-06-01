@@ -49,3 +49,9 @@ p {
 
 
 /** CODIGO AQUI **/
+.layout-shifter{
+    display: grid;
+    grid-template-areas: "contenido" "inferior";
+}
+.sidebar{}
+.contenido-principal{}
