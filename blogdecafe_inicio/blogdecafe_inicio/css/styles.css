@@ -171,6 +171,43 @@ img{max-width: 100%;}
     background-color: var(--negro);
     padding-top: 1rem;
     padding-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 3rem;   
+}
+
+
+
+.cursosTalleres{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     
+}
+@media (min-width:768px) {
+    .cursosTalleres{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    column-gap: 2rem;
+    }
+}
+.cursosTalleres__contenido{
+    font-family: var(--fuente-Parrafos);
+    font-size: 2rem;
+}
+.cursosTalleres__contenido span{
+    font-weight: 700;
+}
+
+/* Contacto */
+/* Fomrmulario */
+.formulario{
+    background-color: #784d3C;
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+.imagen__contacto{
+    background-image: url(/img/contacto.jpg);
+    min-height: 50rem;
+
 }
