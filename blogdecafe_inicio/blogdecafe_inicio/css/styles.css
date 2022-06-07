@@ -37,6 +37,7 @@ a{
 
 h1, h2, h3, h4{
     font-family: var(--fuente-Heding);
+    line-height: 1.2;
 }
 
 h1{font-size: 4.8rem;}
@@ -67,13 +68,18 @@ img{max-width: 100%;}
     margin-top: 5rem;
     font-size: 2.8rem;
 }
-
+.barra{
+    padding-top: 1rem;
+    
+}
 
 @media (min-width:768px) {
     .barra{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 2rem;
+
      
     }
 }
@@ -158,4 +164,13 @@ img{max-width: 100%;}
 }
 .sidebar__lista{
     list-style: none;
+}
+
+/** Footer  **/
+.footer{
+    background-color: var(--negro);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    
 }
