@@ -6,6 +6,8 @@
     --blanco:#fff;
     --negro:#000;
     --gris: rgb(230, 230, 230);
+    --colorfondo-alpha:#ad5a0d6e;
+
 
 }
 
@@ -200,14 +202,30 @@ img{max-width: 100%;}
 /* Contacto */
 /* Fomrmulario */
 .formulario{
-    background-color: #784d3C;
-    width: 95%;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: right;
+    color: var(--blanco);
+    background-color: var(--colorfondo-alpha);
+    font-family: var(--fuente-Parrafos);
+    font-weight: 700;
+    font-size:2rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
     align-items: center;
-    margin-top: -5rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: -45rem;
+    
 }
 .imagen__contacto{
     background-image: url(/img/contacto.jpg);
+    background-repeat: no-repeat;
     min-height: 50rem;
+}
+.formulario__nombre, .formulario__email, .formulario__textarea, .acomodo{
+    border-radius: .5rem;
+    min-height: 4rem;
+    margin: 1rem 1rem;
+    border: none;
 
 }
