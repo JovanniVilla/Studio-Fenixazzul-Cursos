@@ -52,10 +52,17 @@ document.addEventListener('DOMContentLoaded', function(){// solo espera a que se
     console.log(4);
 })
 
+
+/* Evento click */
 const botonEnviar= document.querySelector('.boton--primario');// selecciona dentro del html el que tiene la claseboton--primario
 botonEnviar.addEventListener('click', function(evento){//agrega un evento de escucha cuando se realice click, corre la funcion
     console.log("enviando Informacion");
-    evento.preventDefault();// detinen o previene el comportamiento Default,
+    evento.preventDefault();// detinen o previene el comportamiento Default para que se vea en la cnsola
     
 });
 
+/*eventos de los inputs y texarea */
+const nombre = document.querySelector('#nombre');
+nombre.addEventListener('input', function(e) {
+    console.log(e.target.value);
+});
