@@ -61,8 +61,32 @@ botonEnviar.addEventListener('click', function(evento){//agrega un evento de esc
     
 });
 
-/*eventos de los inputs y texarea */
+
+
+/* Este es un Objeto dodne se guardan los datos ingresados */
+const datos = {
+    nombre: '',
+    email: '',
+    mensaje: ''
+}
+
+/*eventos de los inputs nombre*/
 const nombre = document.querySelector('#nombre');
-nombre.addEventListener('input', function(e) {
-    console.log(e.target.value);
-});
+nombre.addEventListener('input', leerTexto);
+
+/*eventos de los inputs email*/
+const email = document.querySelector('#email');
+email.addEventListener('input', leerTexto);
+
+/* Enventos de los input texareas */
+
+const mensaje = document.querySelector('#mensaje');
+mensaje.addEventListener('input', leerTexto);
+
+//define la funcion que se esta utilizando previamente
+function leerTexto(e) {
+    datos[e.target.id] = e.target.value;
+    /*console.log(e.target.value); */
+    //validar datos ingresados
+    console.log(datos);
+}
