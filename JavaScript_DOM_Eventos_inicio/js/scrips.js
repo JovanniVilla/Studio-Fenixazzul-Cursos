@@ -90,3 +90,18 @@ function leerTexto(e) {
     //validar datos ingresados
     console.log(datos);
 }
+const formulario = 
+formulario.addEventListener('submit', function(evento){
+    evento.preventDefault();
+    //Validar Formulario
+    const { nombre, email, mensaje } = datos;
+
+if(nombre=== ''|| email===''||mensaje===''){
+    console.log('Todos los campos son obligatorios');
+    return; //Corta la ejecucion del codigo
+}
+
+console.log('Enviando Formuilario');
+});
+
+
