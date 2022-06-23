@@ -15,7 +15,7 @@
 	-------------------------------------*/
 	$('ul.sf-menu').superfish({
 		delay: 50,
-		speed: 'fast',
+		speed: 'slow',
 		cssArrows: true,
 		disableHI: false,
 		easing: 'fade',
