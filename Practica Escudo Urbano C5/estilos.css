@@ -1,22 +1,13 @@
-.contenedor{
-    max-width: 1600px;
-}
-.header{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: blue;
-    min-height: 100px;
-    font-weight: 700;
-    color: aliceblue;
-    align-items: center;
+.img-h{
+    padding-bottom: 2rem;
 }
 
-.header_logo{
-    padding: 0;
-    font-size: 36px;
-   /*  display: inline; */
+.lineup-c{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
-.header_menu{
-    display: inline;
+.gale{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
