@@ -1,7 +1,12 @@
+:root{
+    --colorBG:rgb(75, 211, 181);
+    --color_inconos:#4589d8;
+}
 .iconoUsuario svg {
     width: 64;
     height: 64;
-    color: blueviolet;
+    color: var(--color_inconos);
+    margin-right: 2rem;
 }
 
 .mainLogin {
@@ -20,5 +25,5 @@
 #particles-js {
     width: 100%;
     max-height:900px !important;
-    background-color: rgb(14, 14, 58);
+    background-color:var(--colorBG)
 }
