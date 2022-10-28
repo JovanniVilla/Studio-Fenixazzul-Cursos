@@ -8,7 +8,7 @@ function imprimirSumaNumeros() {
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
     // Tu código:
-    var aux = 0;
+    let aux = 0;
     for ( i = 0; i<=10; i++){
       aux = aux +i;
       //console.log(aux); 
@@ -20,9 +20,9 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-  newArray[""];
+  const newArray[];
   for ( i = 0; i<=array.length; i++){
-    evaluar = array[i]%2
+    const evaluar = array[i]%2
     if (evaluar==0){
       newArray.push("i");      
     }
